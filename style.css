@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@media screen {
+  .Engine {
+    margin-left: 500px;
+    padding: 100px;
+    align-items: inherit;
+  }
+  .bt {
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: royalblue;
+  }
+  .btn {
+    background-color: orangered;
+  }
+  .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    padding: 8px;
+    background-color: #85e20b;
+    text-decoration: beige;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(background2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .airoplane {
+    width: 350px;
+    position: absolute;
+    bottom: 50px;
+    left: -50px;
+    animation: plane 2s linear infinite;
+    transform-origin: 100%, 50%;
+  }
+  @keyframes plane {
+    0% {
+      transform: translateX(0px) translateY(0px);
+    }
+    30% {
+      transform: translateX(500px) translateY(0px);
+    }
+    100% {
+      transform: translateX(1500px) translateY(-200px) rotate(-10deg);
+    }
+  }
+  .input {
+    padding: 5px;
+    width: 250px;
+  }
+}
